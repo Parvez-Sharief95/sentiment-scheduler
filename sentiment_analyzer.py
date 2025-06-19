@@ -1,12 +1,12 @@
 from simple_salesforce import Salesforce
 from textblob import TextBlob
-
+import os
 # Connect to Salesforce 
 sf = Salesforce(
-    username='projectspace@2k26.com',
-    password='projectspace@26',
-    security_token='Khu4OihBnFqA92mFJ9DCzVrLg',
-    domain='login'  # or 'test' if sandbox
+username=os.environ['SF_USERNAME'],
+password=os.environ['SF_PASSWORD'],
+security_token=os.environ['SF_TOKEN'],
+domain='login'
 )
 
 print(" Logged into Salesforce!")
