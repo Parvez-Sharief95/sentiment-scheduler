@@ -1,13 +1,20 @@
 from simple_salesforce import Salesforce
 from textblob import TextBlob
 import os
+<<<<<<< HEAD
 # Connect to Salesforce 
+=======
+
+Replace your Salesforce connection block with:
+
+>>>>>>> b45dacd98710dfa0feda58f387ea9fa127157d9a
 sf = Salesforce(
 username=os.environ['SF_USERNAME'],
 password=os.environ['SF_PASSWORD'],
 security_token=os.environ['SF_TOKEN'],
 domain='login'
 )
+# Connect to Salesforce 
 
 print(" Logged into Salesforce!")
 
