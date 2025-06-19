@@ -1,7 +1,9 @@
+name: Run Salesforce Sentiment Analyzer
+
 on:
 schedule:
-- cron: '0 9 * * *' # Runs daily at 9:00 AM UTC
-workflow_dispatch: # Allow manual run
+- cron: '0 9 * * *'
+workflow_dispatch:
 
 jobs:
 run-script:
